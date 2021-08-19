@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Devchallenges - Weather App</title>
+
+  </head>
+  <body>
+  
+    <div class="weather-widget">
+      <div class="weather-card" id="weather-card">
+
+        <h3 class="weather-card__day" id="weather-day"></h3>
+        <span class="weather-card__date" id="weather-date"></span>
+        <span class="weather-card__location" id="weather-location"></span>
+
+        <div class="weather-card__weather">
+          <img src="" alt="Current Weather" class="weather-card__icon" id="weather-icon">
+          <span class="weather-card__temperature" id="weather-temperature"></span>
+          <span class="weather-card__state" id="weather-state"></span>
+        </div>
+
+      </div>
+
+      <div class="weather-infos">
+
+        <div class="weather-infos__info">
+          <span class="info__name">Pressure</span>
+          <span class="info__data" id="weather-pressure"></span>
+        </div>
+
+        <div class="weather-infos__info">
+          <span class="info__name">Humidity</span>
+          <span class="info__data" id="weather-humidity">34%</span>
+        </div>
+
+        <div class="weather-infos__info">
+          <span class="info__name">Wind</span>
+          <span class="info__data" id="weather-wind">0km/h</span>
+        </div>
+
+        <button class="btn btn--primary btn--full" id="change-btn">
+          <i class="fas fa-map-marker-alt"></i> Change location
+        </button>
+
+      </div>
+    </div>
+
+    <div class="modal" id="modal-search">
+      <div class="modal__content">
+        <h2>Change Location</h2>
+        <form id="change-location" class="search">
+          <div class="search__field">
+            <input type="text" name="location" id="location" class="search__input">
+            <button type="submit" class="btn btn--secondary search__btn">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

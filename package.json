@@ -1,0 +1,10 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "index.js",
+  "scripts": {},
+  "author": "José Uilton",
+  "license": "ISC",
+  "devDependencies": {}
+}
